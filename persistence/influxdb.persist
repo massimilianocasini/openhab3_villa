@@ -1,0 +1,11 @@
+Strategies {
+everyMinute  : "0 * * * * ?"
+everyHour    : "0 0 * * * ?"
+everyDay     : "0 0 0 * * ?"
+}
+
+/* Formato group*, item, * all items*/
+Items {
+gTemperature*: strategy =  everyMinute, restoreOnStartup
+gSpeedChart* : strategy = everyChange, restoreOnStartup
+}

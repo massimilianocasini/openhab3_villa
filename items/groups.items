@@ -1,0 +1,47 @@
+Group gAstroRadation "Astro"
+Group gSpeedtest <speedtest>
+Group gSpeedChart "Speedtest Graph"
+Group gTemperature "Temperature Graph"
+
+Group gInterno "Interno Villa" (gLocation) ["Indoor"]
+Group gEsterno "Esterno Villa" (gLocation)  ["Outdoor"] 
+Group gPiani "Piani" (gInterno) ["Floor"]
+Group gPianoInterrato "Piano interrato" (gPiani) ["Basement"]
+Group gPianoTerra "Piano terra" (gPiani) ["GroundFloor"]
+Group gPrimoPiano "Piano primo" (gPiani) ["FirstFloor"]
+
+Group gRiscaldamento "Riscaldamento" ["HVAC"]
+
+Group gBiliardo "Biliardo" (gPianoInterrato) ["Room"]
+Group gAntibagnoPI "Antibagno PI" (gPianoInterrato) ["Bathroom"]
+
+Group gAngoloTV "Angolo TV" (gPianoTerra) ["LivingRoom"]
+Group gAntibagnoPT "Antibagno PT" (gPianoTerra) ["Bathroom"]
+Group gSoggiorno "Soggiorno" (gPianoTerra) ["LivingRoom"]
+Group gAppArancione "Appartamento arancione" (gPianoTerra) ["Bedroom"]
+Group gCucina "Cucina"  (gPianoTerra) ["Kitchen"]
+
+Group gLetto "Camera da letto" (gPrimoPiano) ["Bedroom"]
+Group gArianna "Camera Arianna" (gPrimoPiano) ["Bedroom"]
+Group gAppRosso "Appartamento rosso" (gPrimoPiano) ["Bedroom"]
+Group gAppVerde "Appartamento verde" (gPrimoPiano) ["Bedroom"]
+Group gEleonora "Camera Eleonora" (gPrimoPiano) ["Bedroom"]
+
+Group gTermoumidostatoBiliardo "Termoumidostato Biliardo" (gRiscaldamento, gBiliardo) ["HVAC"]
+Group gTermoumidostatoAntiBagnoPI "Termoumidostato AntiBagno PI" (gRiscaldamento, gAntibagnoPI) ["HVAC"]
+Group gTermoumidostatoLetto "Termoumidostato Letto" (gRiscaldamento, gLetto) ["HVAC"]
+Group gTermoumidostatoArianna "Termoumidostato Arianna" (gRiscaldamento, gArianna) ["HVAC"]
+Group gTermoumidostatoAppArancione "Termoumidostato App. Arancione" (gRiscaldamento, gAppArancione) ["HVAC"]
+Group gTermoumidostatoAppVerde "Termoumidostato App. Verde" (gRiscaldamento, gAppVerde) ["HVAC"]
+Group gTermoumidostatoAngoloTV "Termoumidostato Angolo TV" (gRiscaldamento, gAngoloTV) ["HVAC"]
+Group gTermoumidostatoAntiBagnoPT "Termoumidostato Bagno PT" (gRiscaldamento, gAntibagnoPT) ["HVAC"]
+Group gTermoumidostatoEleonora  "Termoumidostato Eleonora" (gRiscaldamento, gEleonora) ["HVAC"]
+Group gTermoumidostatoSoggiorno  "Termoumidostato Soggiorno" (gRiscaldamento, gSoggiorno) ["HVAC"]
+Group gTermoumidostatoCucina  "Termoumidostato Cucina" (gRiscaldamento, gCucina) ["HVAC"]
+Group gTermoumidostatoAppRosso  "Termoumidostato App. Rosso" (gRiscaldamento, gAppRosso) ["HVAC"]
+
+
+// Group vgSetpoint "SetPoint" (vgTermoumidostato1) 
+// Group vgTemperature "Temperature" (vgTermoumidostato1)
+// Group vgPowerTermostato "ON OFF Termostato" (vgTermoumidostato1)
+// Group vgStatoTermostato "Stato del termostato accesso o spento"  (vgTermoumidostato1)
