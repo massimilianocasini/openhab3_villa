@@ -9,8 +9,7 @@ sitemap villa label="Benvenuto a CASA"
         }
 
         Frame label="Stato Ambienti" icon="party"{
-           
-            Text item=Riepilogo1 label="Biliardo Z1 [%s]" icon=settings {
+            Text item=Riepilogo1 label="Biliardo Z1 [%s]" icon=settings labelcolor=[StatoRele1==0="red", StatoRele1==1="green"] {
                 Default item=Termoumidostato1T
                 Default item=Termoumidostato1U
                 Setpoint item=Termoumidostato1S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -19,9 +18,9 @@ sitemap villa label="Benvenuto a CASA"
                 Switch item=ProxyAttTermo1 mappings=[ON="Disattiva"]  visibility=[ProxyWatingAttTermo1==4]
                 Text item=ProxyTempAttTermo1  visibility=[ProxyWatingAttTermo1==0]
                 Default item=FeedBRele1 //Stato Termostato ATTIVATO /DISATTIVATO
-                Default item=StatoRele1 //Rele termostato SPENTO / ACCESO
+                Default item=StatoRele1 valuecolor=[1="green",0="red"] labelcolor=[1="green", 0="red"] //Rele termostato SPENTO / ACCESO 
             }
-            Text item=Riepilogo2 label="AntiBagno P.I. Z1 [%s]" icon=settings  {
+            Text item=Riepilogo2 label="AntiBagno P.I. Z1 [%s]" icon=settings labelcolor=[StatoRele2==0="red", StatoRele2==1="green"] {
                 Default item=Termoumidostato2T
                 Default item=Termoumidostato2U
                 Setpoint item=Termoumidostato2S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -31,7 +30,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele2 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele2 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo3 label="App.aranc. Z2 [%s]" icon=settings {
+            Text item=Riepilogo3 label="App.aranc. Z2 [%s]" icon=settings labelcolor=[StatoRele3==0="red", StatoRele3==1="green"] {
                 Default item=Termoumidostato3T
                 Default item=Termoumidostato3U
                 Setpoint item=Termoumidostato3S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -41,7 +40,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele3 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele3 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo4 label="TV Z2 [%s]" icon=settings {
+            Text item=Riepilogo4 label="TV Z2 [%s]" icon=settings labelcolor=[StatoRele4==0="red", StatoRele4==1="green"] {
                 Default item=Termoumidostato4T
                 Default item=Termoumidostato4U
                 Setpoint item=Termoumidostato4S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -51,7 +50,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele4 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele4 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo5 label="AntiBagno PT Z2 [%s]" icon=settings {
+            Text item=Riepilogo5 label="AntiBagno PT Z2 [%s]" icon=settings labelcolor=[StatoRele5==0="red", StatoRele5==1="green"] {
                 Default item=Termoumidostato5T
                 Default item=Termoumidostato5U
                 Setpoint item=Termoumidostato5S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -61,7 +60,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele5 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele5 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo6 label="Salone Z2 [%s]" icon=settings {
+            Text item=Riepilogo6 label="Salone Z2 [%s]" icon=settings labelcolor=[StatoRele6==0="red", StatoRele6==1="green"] {
                 Default item=Termoumidostato6T
                 Default item=Termoumidostato6U
                 Setpoint item=Termoumidostato6S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -71,7 +70,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele6 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele6 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo7 label="Cucina Z2 [%s]" icon=settings {
+            Text item=Riepilogo7 label="Cucina Z2 [%s]" icon=settings labelcolor=[StatoRele7==0="red", StatoRele7==1="green"] {
                 Default item=Termoumidostato7T
                 Default item=Termoumidostato7U
                 Setpoint item=Termoumidostato7S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -81,7 +80,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele7 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele7 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo8 label="App.rosso Z3 [%s]" icon=settings {
+            Text item=Riepilogo8 label="App.rosso Z3 [%s]" icon=settings labelcolor=[StatoRele8==0="red", StatoRele8==1="green"] {
                 Default item=Termoumidostato8T
                 Default item=Termoumidostato8U
                 Setpoint item=Termoumidostato8S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -91,7 +90,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele8 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele8 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo9 label="App.verde Z3 [%s]" icon=settings {
+            Text item=Riepilogo9 label="App.verde Z3 [%s]" icon=settings labelcolor=[StatoRele9==0="red", StatoRele9==1="green"] {
                 Default item=Termoumidostato9T
                 Default item=Termoumidostato9U
                 Setpoint item=Termoumidostato9S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -101,7 +100,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele9 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele9 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo10 label="Corridoio Z3 [%s]" icon=settings {
+            Text item=Riepilogo10 label="Corridoio Z3 [%s]" icon=settings labelcolor=[StatoRele10==0="red", StatoRele10==1="green"] {
                 Default item=Termoumidostato10T
                 Default item=Termoumidostato10U
                 Setpoint item=Termoumidostato10S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -111,7 +110,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele10 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele10 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo11 label="Arianna Z3 [%s]" icon=settings {
+            Text item=Riepilogo11 label="Arianna Z3 [%s]" icon=settings labelcolor=[StatoRele11==0="red", StatoRele11==1="green"] {
                 Default item=Termoumidostato11T
                 Default item=Termoumidostato11U
                 Setpoint item=Termoumidostato11S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -121,7 +120,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele11 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele11 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo12 label="Giolo Z3 [%s]" icon=settings {
+            Text item=Riepilogo12 label="Giolo Z3 [%s]" icon=settings labelcolor=[StatoRele12==0="red", StatoRele12==1="green"] {
                 Default item=Termoumidostato12T
                 Default item=Termoumidostato12U
                 Setpoint item=Termoumidostato12S minValue=10 maxValue=30 step=1 //Set temperatura
@@ -131,7 +130,7 @@ sitemap villa label="Benvenuto a CASA"
                 Default item=FeedBRele12 //Stato Termostato ATTIVATO /DISATTIVATO
                 Default item=StatoRele12 //Rele termostato SPENTO / ACCESO
             }
-            Text item=Riepilogo13 label="Eleonora Z3 [%s]" icon=settings {
+            Text item=Riepilogo13 label="Eleonora Z3 [%s]" icon=settings labelcolor=[StatoRele13==0="red", StatoRele13==1="green"] {
                 Default item=Termoumidostato13T
                 Default item=Termoumidostato13U
                 Setpoint item=Termoumidostato13S minValue=10 maxValue=30 step=1 //Set temperatura

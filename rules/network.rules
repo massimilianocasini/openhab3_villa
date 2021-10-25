@@ -1,4 +1,4 @@
-val mailActions = getActions("mail","mail:smtp:gmail_service")
+//val mailActions = getActions("mail","mail:smtp:gmail_service")
 rule "Invia messaggio a BOT per device IP persa"
     when
         Member of gNetwork changed 
